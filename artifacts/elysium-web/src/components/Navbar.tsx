@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { Hexagon } from 'lucide-react';
 import { Link } from 'wouter';
 
 export const Navbar = () => {
@@ -18,7 +17,11 @@ export const Navbar = () => {
       <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
         <Link href="/">
           <div className="flex items-center gap-2 group cursor-pointer">
-            <Hexagon className="w-8 h-8 text-elysium-green" strokeWidth={1.5} />
+            <img
+              src="/logo.jpg"
+              alt="Elysium Intelligence"
+              className="w-8 h-8 object-contain group-hover:drop-shadow-[0_0_8px_rgba(60,255,20,0.8)] transition-all duration-300"
+            />
             <span className={`text-xl text-white tracking-tight ${scrolled ? 'glow-green' : ''} transition-all duration-300`}>
               <strong className="font-bold">Elysium</strong><span className="font-normal">Intelligence</span>
             </span>
